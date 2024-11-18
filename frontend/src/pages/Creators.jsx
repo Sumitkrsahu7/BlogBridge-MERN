@@ -8,7 +8,7 @@ function Creators() {
     const fetchCreators = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4400/api/users/admins",
+          "https://sumit-blogbridge.onrender.com/api/users/admins",
           {
             withCredentials: true,
           }

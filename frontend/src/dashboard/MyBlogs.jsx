@@ -9,7 +9,7 @@ function MyBlogs() {
     const fetchMyBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4400/api/blogs/my-blog",
+          "https://sumit-blogbridge.onrender.com/api/blogs/my-blog",
           { withCredentials: true }
         );
         console.log(data);
@@ -23,7 +23,7 @@ function MyBlogs() {
 
   const handleDelete = async (id) => {
     await axios
-      .delete(`http://localhost:4400/api/blogs/delete/${id}`, {
+      .delete(`https://sumit-blogbridge.onrender.com/api/blogs/delete/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

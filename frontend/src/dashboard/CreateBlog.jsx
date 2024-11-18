@@ -31,7 +31,7 @@ function CreateBlog() {
     formData.append("blogImage", blogImage);
     try {
       const { data } = await axios.post(
-        "http://localhost:4400/api/blogs/create",
+        "https://sumit-blogbridge.onrender.com/api/blogs/create",
         formData,
         {
           withCredentials: true,
