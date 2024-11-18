@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://blogbridge-frontend.onrender.com/login",
+    origin: "https://blogbridge-frontend.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
