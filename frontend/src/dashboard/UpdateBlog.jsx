@@ -28,7 +28,7 @@ function UpdateBlog() {
     const fetchBlog = async () => {
       try {
         const { data } = await axios.get(
-          `https://sumit-blogbridge.onrender.com/api/blogs/single-blog/${id}`,
+          `http://localhost:4400/api/blogs/single-blog/${id}`,
           {
             withCredentials: true,
             headers: {
@@ -58,7 +58,7 @@ function UpdateBlog() {
 
     try {
       const { data } = await axios.put(
-        `https://sumit-blogbridge.onrender.com/api/blogs/update/${id}`,
+        `http://localhost:4400/api/blogs/update/${id}`,
         formData,
         {
           withCredentials: true,

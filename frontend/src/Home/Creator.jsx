@@ -7,7 +7,7 @@ function Creator() {
   useEffect(() => {
     const fetchAdmins = async () => {
       const { data } = await axios.get(
-        "https://sumit-blogbridge.onrender.com/api/users/admins",
+        "http://localhost:4400/api/users/admins",
         {
           withCredentials: true,
         }

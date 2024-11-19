@@ -41,7 +41,7 @@ function Register() {
     formData.append("photo", photo);
     try {
       const { data } = await axios.post(
-        "https://sumit-blogbridge.onrender.com/api/users/register",
+        "http://localhost:4400/api/users/register",
         formData,
         {
           withCredentials: true,

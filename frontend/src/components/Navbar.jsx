@@ -17,7 +17,7 @@ function Navbar() {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        "https://sumit-blogbridge.onrender.com/api/users/logout",
+        "http://localhost:4400/api/users/logout",
         { withCredentials: true }
       );
       console.log(data);
