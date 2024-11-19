@@ -24,7 +24,7 @@ function Sidebar({ setComponent }) {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        "http://localhost:4400/api/users/logout",
+        "https://blogbridge-mern-1.onrender.com/api/users/logout",
         { withCredentials: true }
       );
       toast.success(data.message);
